@@ -2,16 +2,22 @@
 
 using namespace std;
 
-void tambah(int *hasil, int a, int b) {
-    *hasil = a + b;
-}
-
 int main() {
     int x,y,z;
     x = 1;
     y = 3;
     z = 10;
-    tambah(&x, y, z);
-    cout << x;
+
+    int *px;
+    px = &y;
+
+    x = 2;
+    y = 5;
+    z = 11;
+
+    cout << x << endl;
+    cout << y << endl;
+    cout << z << endl;
+    cout << *px << endl;
     return 0;
 }
